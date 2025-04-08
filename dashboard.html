@@ -13,9 +13,8 @@
         .dataspace {
             display: flex;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #2AFC98;
-            padding-top: 20px;
         }
 
         .info {
@@ -27,6 +26,20 @@
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
             background-color: #9ef5cb;
             border-radius: 10px;
+            margin: 30px;
+        }
+
+        iframe{
+            border-radius: 20px;
+        }
+
+        .container{
+            display: flex;
+            gap: 35px;
+        }
+
+        .subhead{
+            text-align: center;
         }
     </style>
 </head>
@@ -36,7 +49,13 @@
             <h1>Sensor Data</h1>
             <div class="container">
                 <div class="data">
-                    <h2>Sensor-1</h2>
+                    <h2 class="subhead">Soil Moisture Sensor</h2>
+                    <iframe width="450" height="260" src="https://thingspeak.com/channels/2902620/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Soil+Moisture+Sensor&type=line"></iframe>
+                </div>
+
+                <div class="data">
+                    <h2 class="subhead">DHT-11</h2>
+                    <iframe width="450" height="260" src="https://thingspeak.com/channels/2902620/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=DHT-11&type=line"></iframe>
                 </div>
             </div>
         </div>
