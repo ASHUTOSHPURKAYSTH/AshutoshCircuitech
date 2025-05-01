@@ -21,7 +21,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 70vw;
+            min-width: 95vw;
             padding: 10px;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
             background-color: #9ef5cb;
@@ -35,7 +35,7 @@
 
         .container{
             display: flex;
-            gap: 35px;
+            gap: 30px;
         }
 
         .subhead{
@@ -50,12 +50,17 @@
             <div class="container">
                 <div class="data">
                     <h2 class="subhead">Soil Moisture Sensor</h2>
-                    <iframe width="450" height="260" src="https://thingspeak.com/channels/2902620/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Soil+Moisture+Sensor&type=line"></iframe>
+                    <iframe width="410" height="260" src="https://thingspeak.com/channels/2902620/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Soil+Moisture+Sensor&type=line"></iframe>
                 </div>
 
                 <div class="data">
                     <h2 class="subhead">DHT-11</h2>
-                    <iframe width="450" height="260" src="https://thingspeak.com/channels/2902620/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=DHT-11&type=line"></iframe>
+                    <iframe width="410" height="260" src="https://thingspeak.com/channels/2902620/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=DHT-11&type=line"></iframe>
+                </div>
+
+                <div class="data">
+                    <h2 class="subhead">MQ 135</h2>
+                    <iframe width="410" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2902620/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
                 </div>
             </div>
         </div>
